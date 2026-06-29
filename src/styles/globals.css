@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background:        40 33% 97%;
+    --foreground:        210 28% 18%;
+    --card:              0 0% 100%;
+    --card-foreground:   210 28% 18%;
+    --popover:           0 0% 100%;
+    --popover-foreground: 210 28% 18%;
+    --primary:           186 52% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary:         40 20% 93%;
+    --secondary-foreground: 210 28% 18%;
+    --muted:             40 20% 94%;
+    --muted-foreground:  215 14% 42%;
+    --accent:            42 52% 54%;
+    --accent-foreground: 210 28% 18%;
+    --destructive:       0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border:            38 18% 88%;
+    --input:             38 18% 88%;
+    --ring:              186 52% 28%;
+    --radius:            0.875rem;
+    --teal-deep:         #0d4a4a;
+    --teal-block:        #145454;
+    --gold-accent:       #c9a84c;
+    --cream-canvas:      #f8f4ec;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cream text-site-text font-sans;
+    min-height: 100vh;
+    background-color: var(--cream-canvas);
+  }
+
+  /* Elegant floral-geometric pattern on cream canvas */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23145454' stroke-width='0.6' opacity='0.35'%3E%3Cpath d='M60 20 L63 35 L78 30 L68 42 L82 50 L68 58 L78 70 L63 65 L60 80 L57 65 L42 70 L52 58 L38 50 L52 42 L42 30 L57 35 Z'/%3E%3Ccircle cx='60' cy='50' r='6'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 120px 120px;
+    background-repeat: repeat;
+    opacity: 0.045;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-14 sm:py-20 lg:py-24;
+  }
+
+  .gold-rule {
+    @apply h-px bg-gradient-to-r from-transparent via-gold to-transparent;
+  }
+
+  .heading-underline {
+    @apply relative inline-block after:absolute after:-bottom-2 after:left-1/2 after:h-0.5 after:w-12 after:-translate-x-1/2 after:rounded-full after:bg-gold after:content-[''];
+  }
+
+  /* Ethereal Jamkaran shrine background */
+  .shrine-backdrop {
+    @apply pointer-events-none absolute inset-x-0 top-0 flex justify-center overflow-hidden;
+    height: min(72vh, 680px);
+  }
+
+  .shrine-backdrop img {
+    @apply h-full w-auto max-w-none object-cover object-center;
+    mask-image: radial-gradient(ellipse 70% 75% at 50% 35%, black 15%, transparent 72%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 75% at 50% 35%, black 15%, transparent 72%);
+    opacity: 0.55;
+    filter: saturate(0.85) brightness(1.05);
+  }
+
+  .shrine-backdrop::after {
+    content: '';
+    @apply absolute inset-0;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(248, 244, 236, 0.4) 45%,
+      rgba(248, 244, 236, 0.92) 78%,
+      var(--cream-canvas) 100%
+    );
+  }
+
+  /* Soft bottom fade on hero portraits */
+  .portrait-fade-bottom::after {
+    content: '';
+    @apply pointer-events-none absolute inset-x-0 bottom-0 h-28;
+    background: linear-gradient(to bottom, transparent, var(--cream-canvas));
+  }
+
+  /* Premium authority card */
+  .authority-card {
+    @apply relative flex h-full flex-col overflow-hidden rounded-2xl border border-cream-200/80 bg-white shadow-card;
+    box-shadow: 0 4px 24px rgba(13, 74, 74, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .authority-card::before {
+    content: '';
+    @apply absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-gold via-gold-muted to-gold/40;
+  }
+
+  /* Decorative section flourish */
+  .section-flourish {
+    @apply flex items-center justify-center gap-4;
+  }
+
+  .section-flourish::before,
+  .section-flourish::after {
+    content: '';
+    @apply h-px w-16 bg-gradient-to-r from-transparent to-gold/60 sm:w-24;
+  }
+
+  .section-flourish::after {
+    @apply bg-gradient-to-l from-transparent to-gold/60;
+  }
+
+  /* Arabic calligraphy emblem (circular) */
+  .arabic-emblem {
+    @apply flex h-28 w-28 shrink-0 items-center justify-center rounded-full border-2 border-gold/50;
+    background: radial-gradient(circle at 30% 30%, rgba(201, 168, 76, 0.15), transparent 70%);
+    box-shadow: 0 0 0 6px rgba(201, 168, 76, 0.08), inset 0 0 20px rgba(201, 168, 76, 0.06);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

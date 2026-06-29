@@ -1,0 +1,16 @@
+{
+  "name": "Qari M. Raza",
+  "short_name": "Qari M. Raza",
+  "description": "Online Quran & Ahkam-e-Deen Education",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#1A7A7A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

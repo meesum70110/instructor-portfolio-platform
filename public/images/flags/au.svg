@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10080 5040">
+  <rect width="10080" height="5040" fill="#00008B"/>
+  <g transform="scale(84)">
+    <rect width="60" height="30" fill="#012169"/>
+    <path d="M0,0 60,30M60,0 0,30" stroke="#fff" stroke-width="6"/>
+    <path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/>
+    <path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/>
+    <path d="M0,0 60,30M60,0 0,30" stroke="#C8102E" stroke-width="4"/>
+  </g>
+  <g fill="#fff">
+    <polygon points="2520,1260 2588,1470 2710,1260 2588,1050"/>
+    <polygon points="3780,2520 3810,2610 3900,2520 3810,2430"/>
+    <polygon points="3150,3150 3180,3240 3270,3150 3180,3060"/>
+    <polygon points="4410,3780 4440,3870 4530,3780 4440,3690"/>
+    <polygon points="5040,2520 5070,2610 5160,2520 5070,2430"/>
+    <polygon points="5670,3150 5700,3240 5790,3150 5700,3060"/>
+  </g>
+  <g fill="#C8102E">
+    <circle cx="2520" cy="1260" r="180"/>
+    <circle cx="3780" cy="2520" r="60"/>
+    <circle cx="3150" cy="3150" r="60"/>
+    <circle cx="4410" cy="3780" r="60"/>
+    <circle cx="5040" cy="2520" r="60"/>
+    <circle cx="5670" cy="3150" r="60"/>
+  </g>
+</svg>

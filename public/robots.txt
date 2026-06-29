@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qari-raza.com/sitemap.xml
