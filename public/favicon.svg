@@ -1,8 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="#1A7A7A"/>
-  <!-- Simplified 8-pointed star in gold -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Quran">
+  <!-- Rehal (holy book stand) -->
   <path
-    d="M16 7 L17.2 12.2 L21.7 9.3 L19.2 14 L24 16 L19.2 18 L21.7 22.7 L17.2 19.8 L16 25 L14.8 19.8 L10.3 22.7 L12.8 18 L8 16 L12.8 14 L10.3 9.3 L14.8 12.2 Z"
+    fill="#104444"
+    d="M11.55 22.55 8.9 26.75h2.4l2.25-2.55zm8.9 0 2.65 4.2h-2.4l-2.25-2.55z"
+  />
+
+  <!-- Left page -->
+  <path
+    fill="#145454"
+    d="M16 4.7C11.5 6.1 6.8 7.8 5.5 8.4 4.9 8.65 4.55 9.2 4.55 9.8V16.5c0 1 .45 1.9 1.3 2.5Q9.5 21.65 16 22.55V4.7z"
+  />
+
+  <!-- Right page -->
+  <path
+    fill="#145454"
+    d="M16 4.7c4.5 1.4 9.2 3.1 10.5 3.7.6.25.95.8.95 1.4V16.5c0 1-.45 1.9-1.3 2.5Q22.5 21.65 16 22.55V4.7z"
+  />
+
+  <!-- Spine -->
+  <path
     fill="#C9A84C"
+    d="M15.54 4.7h.92v18.65c0 .12-.1.22-.22.22h-.48c-.12 0-.22-.1-.22-.22V4.7z"
+  />
+
+  <!-- Inner page glow — left -->
+  <path
+    stroke="#FFF8E7"
+    stroke-width="0.42"
+    stroke-linecap="round"
+    d="M14.7 6.5C11.25 7.75 8.6 8.9 7.45 9.42l-.42 8.95"
+  />
+
+  <!-- Inner page glow — right -->
+  <path
+    stroke="#FFF8E7"
+    stroke-width="0.42"
+    stroke-linecap="round"
+    d="M17.3 6.5c3.45 1.25 6.1 2.4 7.25 2.92l.42 8.95"
+  />
+
+  <!-- Script accents — left -->
+  <path
+    stroke="#E8D59A"
+    stroke-width="0.48"
+    stroke-linecap="round"
+    d="M8.5 12h4.2M8.25 14.25h3.05M8.5 16.5h4.65"
+  />
+
+  <!-- Script accents — right -->
+  <path
+    stroke="#E8D59A"
+    stroke-width="0.48"
+    stroke-linecap="round"
+    d="M19.3 12h4.2M20.55 14.25h3.05M19.05 16.5h4.65"
+  />
+
+  <!-- Outer page edge highlights -->
+  <path
+    stroke="#FFFFFF"
+    stroke-opacity="0.62"
+    stroke-width="0.34"
+    stroke-linecap="round"
+    d="M6 8.95c.2 3.7.15 7.35.24 11"
+  />
+  <path
+    stroke="#FFFFFF"
+    stroke-opacity="0.62"
+    stroke-width="0.34"
+    stroke-linecap="round"
+    d="M26 8.95c-.2 3.7-.15 7.35-.24 11"
   />
 </svg>
