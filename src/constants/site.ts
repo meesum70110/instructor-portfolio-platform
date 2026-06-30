@@ -1,7 +1,7 @@
-const WA_PHONE = '923164484605';
+const WA_PHONE = '923314041512';
 const WA_MESSAGE =
   'Assalam o Alaikum, I would like to inquire about online Quran and Ahkam classes for my child.';
-const EMAIL = 'meesum70110@gmail.com';
+const EMAIL = 'meesum701110@gmail.com';
 const EMAIL_SUBJECT = 'Inquiry for Online Shia Quran Classes';
 
 export const SITE = {
@@ -12,7 +12,7 @@ export const SITE = {
 
   contact: {
     phone:          `+${WA_PHONE}`,
-    phoneDisplay:   '+92 316 448 4605',
+    phoneDisplay:   '+92 331 404 1512',
     email:          EMAIL,
     whatsappUrl:    `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(WA_MESSAGE)}`,
     emailUrl:       `mailto:${EMAIL}?subject=${encodeURIComponent(EMAIL_SUBJECT)}`,
